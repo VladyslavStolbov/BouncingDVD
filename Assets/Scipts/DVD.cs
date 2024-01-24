@@ -16,8 +16,8 @@ public class DVD : MonoBehaviour
         _screenBounds = MainCamera.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, MainCamera.transform.position.z));
         _objectWidth = transform.GetComponent<SpriteRenderer>().bounds.extents.x; 
         _objectHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y; 
-        _moveSpeedX = Random.Range(-1f, 1f) * 6;
-        _moveSpeedY = Random.Range(-1f, 1f) * 6;
+        _moveSpeedX = Random.Range(-1f, 1f) * 6.5f;
+        _moveSpeedY = Random.Range(-1f, 1f) * 6.5f;
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
